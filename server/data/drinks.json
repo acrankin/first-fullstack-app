@@ -1,14 +1,1 @@
-[
-    {
-        "name": "Old-Fashioned",
-        "baseSpirit": "whiskey"
-    },
-    {
-        "name": "Ramos Gin Fizz",
-        "baseSpirit": "gin"
-    },
-    {
-        "name": "Daiquiri",
-        "baseSpirit": "rum"
-    }
-]
+[{"name":"Old-Fashioned","baseSpirit":"whiskey"},{"name":"Ramos Gin Fizz","baseSpirit":"gin"},{"name":"Daiquiri","baseSpirit":"rum"},{"name":"Harvey Wallbanger","baseSpirit":"Vodka"}]

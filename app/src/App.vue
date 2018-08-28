@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header>
+      <h1>Uncle Al's Cocktail Cabinet</h1>
       <nav>
         <router-link to="/">Home</router-link>
         <router-link to="/drinks">Drinks</router-link>

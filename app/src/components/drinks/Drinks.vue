@@ -7,13 +7,15 @@
         :key="index"
         :drink="drink"
       />
-    </ul>  
+    </ul>
+    <AddDrink :on-add="handleAdd"/>  
   </section>  
 </template>
 
 <script>
 import api from '../../services/api';
 import Drink from './Drink.vue';
+import AddDrink from './AddDrink.vue';
 
 export default {
   data() {
@@ -29,13 +31,17 @@ export default {
       });
   },
   components: {
-    Drink
-    //AddDrink
+    Drink,
+    AddDrink
   },
   methods: {
-    //handleAdd
+    handleAdd(drink) {
+      return api.addDrink(drink)
+        .then(saved => {
+          this.drinks.push(saved);
+        });
+    }
   }
-
 };
 </script>
 
