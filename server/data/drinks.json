@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Old-Fashioned",
+        "baseSpirit": "whiskey"
+    },
+    {
+        "name": "Ramos Gin Fizz",
+        "baseSpirit": "gin"
+    },
+    {
+        "name": "Daiquiri",
+        "baseSpirit": "rum"
+    }
+]
