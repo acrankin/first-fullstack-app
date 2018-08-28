@@ -1,1 +1,9 @@
-[{"name":"Old-Fashioned","baseSpirit":"whiskey"},{"name":"Ramos Gin Fizz","baseSpirit":"gin"},{"name":"Daiquiri","baseSpirit":"rum"},{"name":"Harvey Wallbanger","baseSpirit":"Vodka"}]
+[
+    {"name":"Old-Fashioned","baseSpirit":"whiskey", "year": "1880", "containsEgg": "false", "image": "./images/old_fashioned.jpg"},
+    {"name":"Ramos Gin Fizz","baseSpirit":"gin", "year": "1888", "containsEgg": "true", "image": ".images/ramos_gin_fizz.jpg"},
+    {"name":"Daiquiri","baseSpirit":"rum", "year": "1902", "containsEgg": "false", "image": ".images/daiquiri.jpg"},
+    {"name":"Mai Tai","baseSpirit":"rum", "year": "1944", "containsEgg": "false", "image": "./images/mai_tai.jpg"},
+    {"name":"Pisco Sour","baseSpirit":"pisco", "year": "1903", "containsEgg": "true", "image": "./images/pisco_sour.jpg"},
+    {"name":"Sazerac","baseSpirit":"whiskey", "year": "1838", "containsEgg": "false", "image": "./images/sazerac.jpg"},
+    {"name":"Zombie","baseSpirit":"rum", "year": "1934", "containsEgg": "false", "image": "./images/zombie.jpg"}
+]
