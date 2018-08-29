@@ -2,17 +2,27 @@
   <section class="add-drink">
     <h2>New Drink</h2>
     <form @submit.prevent="handleSubmit">
-      <label>
-        Name: 
-        <input type="text" name="name" placeholder="Name" required
-          v-model="drink.name">      
-      </label>
-
-      <label>
-        Base Spirit: 
-        <input type="text" name="name" placeholder="Gin, Whiskey, etc." required
-          v-model="drink.baseSpirit">      
-      </label>
+      <p>
+        <label>
+          Name: 
+          <input type="text" name="name" placeholder="Name" required
+            v-model="drink.name">      
+        </label>
+      </p>
+      <p>
+        <label>
+          Base Spirit: 
+          <input type="text" name="base-spirit" placeholder="Gin, Whiskey, etc." required
+            v-model="drink.baseSpirit">      
+        </label>
+      </p>
+      <p>
+        <label>
+          Year Created: 
+          <input type="number" name="year" placeholder="Year"
+            v-model="drink.year">
+        </label>
+      </p>
 
       <label>
         <button type="submit">Add</button>

@@ -46,5 +46,12 @@ export default {
 </script>
 
 <style>
+.list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  grid-gap: 10px;
+  
+}
 
 </style>
