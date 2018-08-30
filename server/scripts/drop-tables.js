@@ -6,7 +6,7 @@ const client = new Client(databaseUrl);
 client.connect()
     .then(() => {
         return client.query(`
-            DROP TABLE IF NOT EXISTS drinks;
+            DROP TABLE IF EXISTS drinks;
         `);
     })
     .then(
