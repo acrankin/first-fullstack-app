@@ -38,7 +38,10 @@
 const initDrink = () => {
   return {
     name: '',
-    baseSpirit: ''
+    baseSpirit: '',
+    year: '',
+    containsEgg: false,
+    image: ''
   };
 };
 

@@ -27,7 +27,6 @@ export default {
     api.getDrinks()
       .then(drinks => {
         this.drinks = drinks;
-        console.log(this.drinks);
       });
   },
   components: {
