@@ -18,7 +18,6 @@ export default {
     api.getDrinkDetail(this.$route.params.id)
       .then(drink => {
         this.drink = drink;
-        console.log('detail view', this.drink);
       });
   }
 };
