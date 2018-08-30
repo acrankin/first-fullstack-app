@@ -5,5 +5,9 @@
     {"name":"Mai Tai","baseSpirit":"rum", "year": "1944", "containsEgg": "false", "image": "./images/mai_tai.jpg"},
     {"name":"Pisco Sour","baseSpirit":"pisco", "year": "1903", "containsEgg": "true", "image": "./images/pisco_sour.jpg"},
     {"name":"Sazerac","baseSpirit":"whiskey", "year": "1838", "containsEgg": "false", "image": "./images/sazerac.jpg"},
-    {"name":"Zombie","baseSpirit":"rum", "year": "1934", "containsEgg": "false", "image": "./images/zombie.jpg"}
+    {"name":"Tom and Jerry","baseSpirit":"whiskey", "year": "", "containsEgg": "true", "image": ""},
+    {"name":"Paloma","baseSpirit": "tequila", "year": "1976", "containsEgg": "false", "image": ""},
+    {"name":"Margarita","baseSpirit":"tequila", "year": "1936", "containsEgg": "false", "image": ""},
+    {"name":"Three Dots and a Dash","baseSpirit":"rum", "year": "1944", "containsEgg": "false", "image": ""},
+    {"name":"Martini","baseSpirit":"gin", "year": "1886", "containsEgg": "false", "image": ""}
 ]
