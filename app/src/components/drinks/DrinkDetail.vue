@@ -3,6 +3,9 @@
       <h1>wow that is a sweet detail view</h1>
       <p>{{ drink.name }}</p>
       <p>{{ drink.year}}</p>
+      <p v-if="drink.containsEgg === true">
+        <em>*contains raw egg</em> -->
+      </p>
     </section>
 </template>
 
