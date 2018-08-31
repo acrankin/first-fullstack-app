@@ -19,7 +19,7 @@ app.get('/api/drinks', (req, res) => {
       SELECT
         d.id,
         d.name,
-        s.id as spirit_id,
+        s.id as "spiritId",
         s.name as "baseSpirit",
         d.year,
         d.contains_egg,
@@ -31,7 +31,6 @@ app.get('/api/drinks', (req, res) => {
     `)
       .then(result => {
         res.send(result.rows);
-        console.log(result);
       })
       .catch(err => console.log(err));
 });

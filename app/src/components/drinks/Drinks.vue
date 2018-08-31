@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>all my drinksss</h2>
+    <h2>all my drinks</h2>
     <ul class="list">
       <Drink
         v-for="(drink, index) in drinks"
