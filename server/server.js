@@ -17,16 +17,21 @@ client.connect();
 app.get('/api/drinks', (req, res) => {
     client.query(`
       SELECT
-        id,
-        name,
-        spirit_id,
-        year,
-        contains_egg,
-        image
-      FROM drinks;
+        d.id,
+        d.name,
+        s.id as spirit_id,
+        s.name as "baseSpirit",
+        d.year,
+        d.contains_egg,
+        d.image
+      FROM drinks as d
+      JOIN spirits as s
+      ON d.spirit_id = s.id
+      ORDER BY d.name;
     `)
       .then(result => {
         res.send(result.rows);
+        console.log(result);
       })
       .catch(err => console.log(err));
 });
@@ -34,14 +39,17 @@ app.get('/api/drinks', (req, res) => {
 app.get('/api/drinks/:id', (req, res) => {
   client.query(`
     SELECT
-      id,
-      name,
-      spirit_id,
-      year,
-      contains_egg,
-      image
-    FROM drinks
-    WHERE id = $1;
+      d.id,
+      d.name,
+      s.id as spirit_id,
+      s.name as "baseSpirit",
+      d.year,
+      d.contains_egg,
+      d.image
+    FROM drinks as d
+    JOIN spirits as s
+    ON d.spirit_id = s.id
+    WHERE d.id = $1;
   `,
   [req.params.id]
   )

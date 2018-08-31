@@ -4,8 +4,9 @@
       <p>{{ drink.name }}</p>
       <p>{{ drink.year}}</p>
       <p v-if="drink.containsEgg === true">
-        <em>*contains raw egg</em> -->
+        <em>*contains raw egg</em>
       </p>
+      <p>{{ drink.baseSpirit }}</p>
     </section>
 </template>
 
@@ -21,6 +22,7 @@ export default {
     api.getDrinkDetail(this.$route.params.id)
       .then(drink => {
         this.drink = drink;
+        console.log(this.drink);
       });
   }
 };
