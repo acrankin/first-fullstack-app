@@ -10,7 +10,11 @@
     "test": "exit 0",
     "create-tables": "node scripts/create-tables.js",
     "drop-tables": "node scripts/drop-tables.js",
-    "recreate-tables": "npm run drop-tables && npm run create-tables"
+    "recreate-tables": "npm run drop-tables && npm run create-tables",
+    "seed-spirits": "node scripts/seed-spirits.js",
+    "seed-drinks": "node scripts/seed-drinks.js",
+    "seed-data": "npm run seed-spirits && npm run seed-drinks",
+    "db-load-all": "npm run recreate-tables && npm run seed-data"
   },
   "author": "Alex Rankin",
   "license": "ISC",
