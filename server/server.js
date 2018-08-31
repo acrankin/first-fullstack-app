@@ -36,7 +36,7 @@ app.get('/api/drinks/:id', (req, res) => {
     SELECT
       id,
       name,
-      base_spirit,
+      spirit_id,
       year,
       contains_egg,
       image
@@ -55,7 +55,7 @@ app.post('/api/drinks', (req, res) => {
     const body = req.body;
     console.log(body);
     client.query(`
-        INSERT INTO drinks (name, base_spirit, year, contains_egg, image)
+        INSERT INTO drinks (name, spirit_id, year, contains_egg, image)
         VALUES ($1, $2, $3, $4, $5)
         RETURNING *;
     `,
