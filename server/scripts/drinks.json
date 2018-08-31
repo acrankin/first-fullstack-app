@@ -1,13 +1,13 @@
 [
-    {"name":"Old-Fashioned","baseSpirit":"whiskey", "year": "1880", "containsEgg": "false", "image": "./images/old_fashioned.jpg"},
-    {"name":"Ramos Gin Fizz","baseSpirit":"gin", "year": "1888", "containsEgg": "true", "image": "./images/ramos_gin_fizz.jpg"},
-    {"name":"Daiquiri","baseSpirit":"rum", "year": "1902", "containsEgg": "false", "image": "./images/daiquiri.jpg"},
-    {"name":"Mai Tai","baseSpirit":"rum", "year": "1944", "containsEgg": "false", "image": "./images/mai_tai.jpg"},
-    {"name":"Pisco Sour","baseSpirit":"pisco", "year": "1903", "containsEgg": "true", "image": "./images/pisco_sour.jpg"},
-    {"name":"Sazerac","baseSpirit":"whiskey", "year": "1838", "containsEgg": "false", "image": "./images/sazerac.jpg"},
-    {"name":"Tom and Jerry","baseSpirit":"whiskey", "year": "", "containsEgg": "true", "image": ""},
-    {"name":"Paloma","baseSpirit": "tequila", "year": "1976", "containsEgg": "false", "image": ""},
-    {"name":"Margarita","baseSpirit":"tequila", "year": "1936", "containsEgg": "false", "image": ""},
-    {"name":"Three Dots and a Dash","baseSpirit":"rum", "year": "1944", "containsEgg": "false", "image": ""},
-    {"name":"Martini","baseSpirit":"gin", "year": "1886", "containsEgg": "false", "image": ""}
+    {"name":"Old-Fashioned","baseSpirit":"whiskey", "year": 1880, "containsEgg": false, "image": "./images/old_fashioned.jpg"},
+    {"name":"Ramos Gin Fizz","baseSpirit":"gin", "year": 1888, "containsEgg": true, "image": "./images/ramos_gin_fizz.jpg"},
+    {"name":"Daiquiri","baseSpirit":"rum", "year": 1902, "containsEgg": false, "image": "./images/daiquiri.jpg"},
+    {"name":"Mai Tai","baseSpirit":"rum", "year": 1944, "containsEgg": false, "image": "./images/mai_tai.jpg"},
+    {"name":"Pisco Sour","baseSpirit":"pisco", "year": 1903, "containsEgg": true, "image": "./images/pisco_sour.jpg"},
+    {"name":"Sazerac","baseSpirit":"whiskey", "year": 1838, "containsEgg": false, "image": "./images/sazerac.jpg"},
+    {"name":"Tom and Jerry","baseSpirit":"whiskey", "year": 1830, "containsEgg": true, "image": ""},
+    {"name":"Paloma","baseSpirit": "tequila", "year": 1976, "containsEgg": false, "image": ""},
+    {"name":"Margarita","baseSpirit":"tequila", "year": 1936, "containsEgg": false, "image": ""},
+    {"name":"Three Dots and a Dash","baseSpirit":"rum", "year": 1944, "containsEgg": false, "image": ""},
+    {"name":"Martini","baseSpirit":"gin", "year": 1886, "containsEgg": false, "image": ""}
 ]

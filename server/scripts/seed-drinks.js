@@ -5,7 +5,7 @@ Promise.all(
   drinks.map(drink => {
     return client.query(`
       INSERT INTO drinks(
-        spirit_id, name, base_spirit, year, contains_egg, image
+        spirit_id, name, year, contains_egg, image
       )
       SELECT
         id as spirit_id,

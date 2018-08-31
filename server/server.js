@@ -19,7 +19,7 @@ app.get('/api/drinks', (req, res) => {
       SELECT
         id,
         name,
-        base_spirit,
+        spirit_id,
         year,
         contains_egg,
         image

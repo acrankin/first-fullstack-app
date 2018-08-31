@@ -6,11 +6,11 @@ client.query(`
       name VARCHAR(256) UNIQUE NOT NULL,
       color VARCHAR(256) NOT NULL
     );
-    
+
     CREATE TABLE IF NOT EXISTS drinks (
       id SERIAL PRIMARY KEY,
       name VARCHAR(256) NOT NULL,
-      base_spirit VARCHAR(256) NOT NULL REFERENCES spirits(name),
+      spirit_id INTEGER NOT NULL REFERENCES spirits(id),
       year INTEGER,
       contains_egg BOOLEAN,
       image VARCHAR(256) 
