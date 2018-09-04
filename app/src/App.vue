@@ -9,15 +9,27 @@
     </header>
 
     <main>
-      <router-view></router-view>
+      <router-view :spirits="spirits"></router-view>
     </main>
   </div>
 </template>
 
 <script>
+import api from './services/api';
 
 export default {
- 
+  data() {
+    return {
+      spirits: null
+    };
+  },
+  created() {
+    console.log('how did i get here?');
+    api.getSpirits()
+      .then(spirits => {
+        this.spirits = spirits;
+      });
+  }
 };
 </script>
 

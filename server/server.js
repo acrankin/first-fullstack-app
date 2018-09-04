@@ -75,6 +75,16 @@ app.post('/api/drinks', (req, res) => {
         .catch(err => console.log(err));
 });
 
+app.get('api/spirits', (req, res) => {
+  client.query(`
+    SELECT *
+    FROM spirits;
+  `)
+    .then(result => {
+      res.send(result.rows);
+    });
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () => console.log('app is running!'));

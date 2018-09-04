@@ -11,11 +11,11 @@
         Base Spirit:
         <select v-model.number="edit.spiritId" required>
           <option disabled value="">Choose Your Poison</option>
-          <option
+          <option v-if="spirits"
             v-for="spirit in spirits"
             :key="spirit.id"
             :value="spirit.id">
-            {{ spirit.name }}
+            {{spirit.name}}
           </option>
         </select>
       </label>

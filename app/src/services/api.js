@@ -27,6 +27,7 @@ export default {
     return fetch(SPIRITS_URL, {
       headers: { 'Content-Type': 'application/json' }
     })
+      .then(console.log('api being called'))
       .then(response => response.json());
   }
 };
